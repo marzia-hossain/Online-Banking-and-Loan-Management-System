@@ -68,3 +68,20 @@ a {
 a:hover {
     text-decoration: underline;
 }
+back-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #4facfe;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: #00c6ff;
+}
