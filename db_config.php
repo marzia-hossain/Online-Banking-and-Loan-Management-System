@@ -1,0 +1,16 @@
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "online_banking_loan_management_system"; // use your actual DB name
+
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Database connection failed: " . $conn->connect_error);
+}
+
+// Optional but recommended
+$conn->set_charset("utf8mb4");
+?>

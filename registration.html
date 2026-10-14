@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <h2>Create Account</h2>
+
+    <form action="register_process.php" method="POST">
+
+        <label>Full Name:</label>
+        <input type="text" name="full_name" required>
+
+        <label>Phone:</label>
+        <input type="text" name="phone" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>NID:</label>
+        <input type="text" name="nid" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Address:</label>
+        <input type="text" name="address" required>
+
+        <label>PIN:</label>
+        <input type="password" name="pin" required>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p style="margin-top: 15px;">
+        Already have an account?
+        <a href="login.html">Login here</a>
+    </p>
+
+</div>
+
+</body>
+</html>

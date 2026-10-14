@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Loan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <a href="dashboard.php" class="back-btn">← Back</a>
+
+    <h2>Apply for Loan</h2>
+
+    <form action="loan_apply.php" method="POST">
+
+        <label>Loan Amount:</label>
+        <input type="number" name="amount" required>
+
+        <label>Interest Rate (%):</label>
+        <input type="number" name="interest_rate" value="10" step="0.01" required>
+
+        <label>Duration (months):</label>
+        <select name="duration" required>
+            <option value="6">6 Months</option>
+            <option value="12">12 Months</option>
+            <option value="24">24 Months</option>
+        </select>
+
+        <button type="submit">Apply</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

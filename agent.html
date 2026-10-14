@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cash Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <a href="dashboard.html" class="back-btn">← Back</a>
+
+    <h2>Cash Transaction</h2>
+
+    <form action="cash_transaction_process.php" method="POST">
+
+        <!-- Customer Wallet -->
+        <label>Customer Wallet ID:</label>
+        <input type="number" name="customer_wallet_id" required>
+
+        <!-- Agent Wallet -->
+        <label>Agent Wallet ID:</label>
+        <input type="number" name="agent_wallet_id" required>
+
+        <!-- Transaction Type -->
+        <label>Type:</label>
+        <select name="type" required>
+            <option value="cash_in">Cash In</option>
+            <option value="cash_out">Cash Out</option>
+        </select>
+
+        <!-- Amount -->
+        <label>Amount:</label>
+        <input type="number" name="amount" step="0.01" required>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

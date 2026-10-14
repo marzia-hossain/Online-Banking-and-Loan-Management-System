@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pay Bill / Merchant Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <a href="dashboard.html" class="back-btn">← Back</a>
+
+    <h2>Make Payment</h2>
+
+    <form action="payment_process.php" method="POST">
+
+        <!-- Receiver Wallet -->
+        <label>Receiver Wallet ID (Merchant / Service Provider):</label>
+        <input type="number" name="receiver_wallet_id" required>
+
+        <!-- Payment Type -->
+        <label>Payment Type:</label>
+        <select name="bill_type" required>
+            <option value="electricity">Electricity</option>
+            <option value="water">Water</option>
+            <option value="internet">Internet</option>
+            <option value="mobile_recharge">Mobile Recharge</option>
+            <option value="shopping">Merchant Payment</option>
+            <option value="service_fee">Service Fee</option>
+        </select>
+
+        <!-- Amount -->
+        <label>Amount:</label>
+        <input type="number" name="amount" step="0.01" required>
+
+        <button type="submit">Pay Now</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
